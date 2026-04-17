@@ -1,5 +1,12 @@
 <?php
 require_once('config.php');
+// Source - https://stackoverflow.com/a/21429652
+// Posted by Fancy John, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-04-14, License - CC BY-SA 4.0
+
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
 
 $error = "";
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -9,7 +16,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!empty($username) && !empty($password)) {
         $user_data = $username . "|" . $password . PHP_EOL;
 
-        if (file_put_contents('users.txt', $user_data, FILE_APPEND)) {
+        $dir = __DIR__ . "/data";
+        if (!is_dir($dir)) {
+            mkdir($dir);
+        }
+
+        if (file_put_contents($dir . '/users.txt', $user_data, FILE_APPEND)) {
             $_SESSION['user'] = $username;
             header("Location: index.php");
             exit();
@@ -36,9 +48,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <?php endif; ?>
 
         <form method="POST" action="register.php">
-            <input type="text" name="username" placeholder="Choose Username" required 
+            <input type="text" name="username" placeholder="Username" required 
                    value="<?php echo isset($_POST['username']) ? sanitize($_POST['username']) : ''; ?>">
-            <input type="password" name="password" placeholder="Choose Password" required>
+            <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Create Account</button>
         </form>
         <p>Already have an account? <a href="login.php">Login here</a></p>
