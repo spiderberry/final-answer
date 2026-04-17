@@ -14,22 +14,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = $_POST['password'];
 
     if (!empty($username) && !empty($password)) {
-        $user_data = $username . "|" . $password . PHP_EOL;
-
-        $dir = __DIR__ . "/data";
-        if (!is_dir($dir)) {
-            mkdir($dir);
-        }
-
-        if (file_put_contents($dir . '/users.txt', $user_data, FILE_APPEND)) {
-            $_SESSION['user'] = $username;
-            header("Location: index.php");
-            exit();
+        if (isUsernameTaken($username)) {
+            $error = "Username is already taken!";
         } else {
-            $error = "System error. Please try again.";
+            $user_data = $username . "|" . $password . PHP_EOL;
+
+            $dir = __DIR__ . "/data";
+            if (!is_dir($dir)) {
+                mkdir($dir);
+            }
+
+            if (file_put_contents($dir . '/users.txt', $user_data, FILE_APPEND)) {
+                $_SESSION['user'] = $username;
+                header("Location: index.php");
+                exit();
+            } else {
+                $error = "System error. Please try again.";
+            }
         }
     } else {
-        $error = "All fields are required!";
+                $error = "All fields are required!";
+            
     }
 }
 ?>
