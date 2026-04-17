@@ -1,0 +1,12 @@
+[
+  {
+    "question": "What company invented the iPhone?",
+    "answers": ["Apple", "IBM", "Fox News", "Intel"],
+    "correct": 0
+  },
+  {
+    "question": "What year was the iPhone released?",
+    "answers": ["2005", "2007", "2009", "2010"],
+    "correct": 1
+  }
+]
