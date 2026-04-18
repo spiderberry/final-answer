@@ -1,0 +1,27 @@
+[
+    {
+    "question": "Which NBA legend played his entire 20-year career exclusively for the Los Angeles Lakers?",
+    "answers": ["Kareem Abdul-Jabbar", "Magic Johnson", "Kobe Bryant", "Shaquille O'Neal"],
+    "correct": 2
+    },
+    {
+    "question": "Who was the leader of \"Team 7\" when Naruto, Sasuke, and Sakura first graduated from the Academy?",
+    "answers": ["Jiraiya", "Kakashi Hatakke", "Might Guy", "Minato Uchiha"],
+    "correct": 1
+    },
+    {
+    "question": "In Naruto, what is Naruto’s signature jutsu?",
+    "answers": ["Sharingan", "Shadow Clone Jutsu", "Chidori", "Byakugan"],
+    "correct": 1
+    },
+    {
+    "question": "What NBA team does Stephen Curry play for? (2026)",
+    "answers": ["Golden State Warriors", "Los Angeles Lakers", "Boston Celtics", "Brooklyn Nets"],
+    "correct": 0
+    },
+    {
+    "question": "What is the \"street name\" adopted by Walter White as he builds his empire?",
+    "answers": ["The Chemist", "Slim Shady", "Mr.Blue", "Heisenberg"],
+    "correct": 3
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+    "question": "When Rasmus Lerdorf first released the code that would become PHP in 1995, what did the acronym originally stand for?",
+    "answers": ["Python Hypertext Preprocessor", "Personal Home Page", "PHP: Hypertext Preprocessor", "Professional HTML Preprocessor"],
+    "correct": 2
+    },
+    {
+    "question": "In Naruto Shippuden, which character gave Kakashi his Sharingan?",
+    "answers": ["Itachi Uchiha", "Madara Uchiha", "Obito Uchiha", "Sasuke Uchiha"],
+    "correct": 3
+    }
+]

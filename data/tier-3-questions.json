@@ -1,0 +1,47 @@
+[
+    {
+    "question": "The viral PinkPantheress track \"Break It Off\" features a prominent drum and bass sample from which 1995 song by Adam F?",
+    "answers": ["Circles", "Metropolis", "Brand New Funk", "Valley of the Shadows"],
+    "correct": 0
+    },
+    {
+    "question": "Which New Jersey city is historically known as the \"Silk City\" due to its dominance in the silk industry during the 19th century?",
+    "answers": ["Newark", "Jersey City", "Paterson", "Trenton"],
+    "correct": 2
+    },
+    {
+    "question": "What is the name of the strip club that serves as the primary hangout and \"office\" for Tony Soprano’s crew?",
+    "answers": ["Satriale's", "Bada Bing!", "The Vesuvio", "Striped Horse"],
+    "correct": 1
+    },
+    {
+    "question": "What is the stage name of rapper Nayvadius Wilburn?",
+    "answers": ["Nipsey Hussle", "Eminem", "Future", "Gunna"],
+    "correct": 3
+    },
+    {
+    "question": "In Jujutsu Kaisen, what is Yuji Itadori known for housing?",
+    "answers": ["The Nine Tailed Fox", "Sukuna", "Hanami", "Rika"],
+    "correct": 2
+    },
+    {
+    "question": "What does HTML stand for?",
+    "answers": ["High Text Markup Language", "Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlink and Text Markup Language"],
+    "correct": 1
+    },
+    {
+    "question": "In The Sopranos, what is Tony Soprano’s \"official\" profession?",
+    "answers": ["Waste Management Consultant", "Lawyer", "Software Engineer", "Construction Manager"],
+    "correct": 0
+    },
+    {
+    "question": "Which standard HTTP status code is returned by a server when a requested resource cannot be found?",
+    "answers": ["404", "403", "401", "400"],
+    "correct": 0
+    },
+    {
+    "question": "What is the name of Satoru Gojo’s inherited technique that allows him to manipulate space at an atomic level?",
+    "answers": ["Black Flash", "Limitless", "Idle Transfiguration", "Kamehameha"],
+    "correct": 1
+    }
+]

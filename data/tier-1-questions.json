@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What company invented the iPhone?",
+    "answers": ["Apple", "IBM", "Fox News", "Intel"],
+    "correct": 0
+  },
+  {
+    "question": "What year was the iPhone released?",
+    "answers": ["2005", "2007", "2009", "2010"],
+    "correct": 1
+  },
+  {
+    "question": "What is the name of Apple's virtual assistant?",
+    "answers": ["Siri", "Alexa", "Cortana", "Google Assistant"],
+    "correct": 0
+  },
+  {
+    "question": "Which of these is NOT an Apple product?",
+    "answers": ["iPad", "MacBook", "Surface Pro", "Apple Watch"],
+    "correct": 2
+  },
+  {
+    "question": "What is the name of Apple's operating system for iPhones?",
+    "answers": ["iOS", "Android", "Windows Phone", "BlackBerry OS"],
+    "correct": 0
+  },
+  {
+    "question": "What is the name of SpongeBob’s pet snail who famously says \"Meow\"?",
+    "answers": ["Gary", "Mittens", "Patrick", "Jerry"],
+    "correct": 0
+  },
+  {
+    "question": "What is the real identity of Iron Man?",
+    "answers": ["Clark Kent", "Bruce Wayne", "Tony Stark", "Peter Parker"],
+    "correct": 2
+  },
+  {
+    "question": "Which city serves as the capital of the state of Georgia?",
+    "answers": ["Macon", "Augusta", "Savannah", "Atlanta"],
+    "correct": 3
+  },
+  {
+    "question": "In HTML, which tag is used to define the largest and most important heading on a page?",
+    "answers": ["<header>", "<big>", "<h1>", "<h>"],
+    "correct": 2
+  },
+  {
+    "question": "What sport is Usain Bolt known for?",
+    "answers": ["Sprinting", "Swimming", "Soccer", "Basketball"],
+    "correct": 0
+  },
+  {
+    "question": "In Breaking Bad, what subject does Walter White teach?",
+    "answers": ["Math", "Chemistry", "Physical Education", "English"],
+    "correct": 1
+  },
+  {
+    "question": "In Regular Show, what type of bird is Mordecai?",
+    "answers": ["Woodpecker", "Blue Jay", "Crow", "Bluebird"],
+    "correct": 1
+  }
+]

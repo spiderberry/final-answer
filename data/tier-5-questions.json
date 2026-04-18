@@ -1,0 +1,32 @@
+[
+    {
+    "question": "Which of the \"Seven Ninja Swordsmen of the Mist\" wielded the living, sentient sword known as Samehada before Kisame Hoshigaki?",
+    "answers": ["Zabuza Momochi", "Tsunade", "Suigetsu", "Fuguki Suikozan"],
+    "correct": 3
+    },
+    {
+    "question": "In Guardians of the Galaxy, on which planet does Peter Quill find the Orb (Power Stone)?",
+    "answers": ["Knowhere", "Morag", "Vormir", "Xandar"],
+    "correct": 1
+    },
+    {
+    "question": "What was Fakemink's original name before he changed it to Fakemink?",
+    "answers": ["9090gate", "lndnsavior", "TNF Vince", "Champain"],
+    "correct": 0
+    },
+    {
+    "question": "In the legendary episode \"Pine Barrens,\" what was the first name of the Russian mobster that Paulie and Christopher fail to kill in the woods?",
+    "answers": ["Valery", "Dmitri", "Thomas", "Vladmir"],
+    "correct": 0
+    },
+    {
+    "question": "In Breaking Bad, what is the name of the fast-food chain Gus Fring uses as a front?",
+    "answers": ["King Fring's Chicken", "King of Burgers", "Los Pollos Hermanos", "Pollo Loco"],
+    "correct": 2
+    },
+    {
+    "question": "In JavaScript, which keyword declares a block-scoped variable?",
+    "answers": ["var", "let", "const", "let and const"],
+    "correct": 3
+    }
+]

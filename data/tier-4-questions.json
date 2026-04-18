@@ -1,0 +1,37 @@
+[
+    {
+    "question": "In the animated series, what is the name of Mark Grayson’s favorite comic book character (and TV show)?",
+    "answers": ["Science Dog", "Tech Man", "Seance Dog", "Invincible"],
+    "correct": 2
+    },
+    {
+    "question": "In a standard outdoor 400m track, which lane is generally considered to have the \"gentlest\" or widest curve?",
+    "answers": ["Lane 1", "Lane 8", "Lane 4", "Lane 12"],
+    "correct": 1
+    },
+    {
+    "question": "The house music producer and DJ known as Odd Mob (Harry Hope) hails from which country?",
+    "answers": ["United States", "Netherlands", "Spain", "Australia"],
+    "correct": 3
+    },
+    {
+    "question": "Which New Jersey city is historically known as the \"Silk City\" due to its dominance in the silk industry during the 19th century?",
+    "answers": ["Newark", "Jersey City", "Paterson", "Trenton"],
+    "correct": 2
+    },
+    {
+    "question": "Which event is NOT a sprint?",
+    "answers": ["800m", "100m", "300m", "400m"],
+    "correct": 0
+    },
+    {
+    "question": "In Naruto, how many times did Naruto fail the academy graduation exam?",
+    "answers": ["0", "1", "2", "3"],
+    "correct": 3
+    },
+    {
+    "question": "What is the capital of New Jersey?",
+    "answers": ["Newark", "Trenton", "Jersey City", "Paterson"],
+    "correct": 1
+    }
+]

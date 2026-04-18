@@ -8,11 +8,12 @@
     // initialize game state
     if (!isset($_SESSION['question_index'])) {
         $_SESSION['question_index'] = 0;
-        $_SESSION['score'] = 0;
+        $_SESSION['money'] = 0;
+        $_SESSION['tier'] = 1;
     }
 
     // load questions from JSON file and turns into an array
-    $questions = json_decode(file_get_contents('data/easy-questions.json'), true);
+    $questions = json_decode(file_get_contents('data/tier-1-questions.json'), true);
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['answer'])) {
         $current = $_SESSION['question_index'];
@@ -21,7 +22,7 @@
         $selected = $_POST['answer'];
 
         if ($selected == $question['correct']) {
-            $_SESSION['score'] += 100;
+            $_SESSION['money'] += 100;
             $_SESSION['question_index']++;
         } 
 
@@ -41,11 +42,11 @@
 
     echo "<h1>{$_SESSION['user']}'s Game</h1>";
     echo "<h2>{$question['question']}</h2>";
-    echo "<p>Score: {$_SESSION['score']}</p>";
+    echo "<p>Money: {$_SESSION['money']}</p>";
 
     foreach ($question['answers'] as $index => $answer) {
         echo "<form method='POST'>
-                <button name='answer' value='$index'>$answer</button>
+                <button name='answer' value='$index'>" . htmlspecialchars($answer) . "</button>
             </form>";
     }
 ?>
