@@ -10,7 +10,6 @@ error_reporting(E_ALL);
 
 $error = "";
 
-session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['username']) && isset($_POST['password'])) {
         $username = sanitize($_POST['username']);
@@ -18,22 +17,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $users_file = __DIR__ . "/data/users.txt";
         if (file_exists($users_file)) {
-
             $users = file($users_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
             
             foreach ($users as $user) {
-
                 list($stored_username, $stored_password) = explode("|", $user);
 
                 if ($stored_username === $username && $stored_password === $password) {
-
                     $_SESSION['user'] = $username;
                     header("Location: index.php");
                     exit();
                 }
             }
         }
-        
         $error = "Invalid username or password!";
     }
 }
@@ -43,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
     <title>Final Answer | Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="GameShow.css">
 </head>
 <body>
     <div class="auth-container">
@@ -52,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p class="error" style="color:red;"><?php echo $error; ?></p>
         <?php endif; ?>
 
-        <form action=login.php method="POST">
+        <form action="login.php" method="POST">
             <input type="text" name="username" placeholder="Username" required
                    value="<?php echo isset($_POST['username']) ? sanitize($_POST['username']) : ''; ?>">
             <input type="password" name="password" placeholder="Password" required>

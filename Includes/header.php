@@ -1,12 +1,28 @@
 <?php
-require_once(__DIR__ . '/../Config.php'); 
+$configPath = dirname(__FILE__, 2) . '/config.php';
+
+if (file_exists($configPath)) {
+    require_once $configPath;
+} else {
+    require_once 'config.php';
+}
+
+if (!function_exists('checkAuth')) {
+    function checkAuth() {
+        if (!isset($_SESSION['user'])) {
+            header("Location: login.php");
+            exit();
+        }
+    }
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Final Answer | Millionaire Trivia</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="GameShow.css">
 </head>
 <body>
     <nav>

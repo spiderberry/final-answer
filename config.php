@@ -1,9 +1,6 @@
 <?php
-
-session_start();
-
-function sanitize($data) {
-    return htmlspecialchars(strip_tags(trim($data)));
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
 }
 
 function checkAuth() {
@@ -11,6 +8,10 @@ function checkAuth() {
         header("Location: login.php");
         exit();
     }
+}
+
+function sanitize($data) {
+    return htmlspecialchars(strip_tags(trim($data)));
 }
 
 function inGame() {
@@ -24,11 +25,10 @@ function updateScore($points) {
 }
 
 function isUsernameTaken($username) {
-    $users_file = __DIR__ . "/data/users.txt"; // Path based on partner's structure
+    $users_file = realpath(__DIR__) . "/data/users.txt";
     if (file_exists($users_file)) {
         $users = file($users_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         foreach ($users as $user) {
-            // Split the stored data by the pipe character
             $parts = explode("|", $user);
             if (count($parts) > 0 && strtolower(trim($parts[0])) === strtolower(trim($username))) {
                 return true;

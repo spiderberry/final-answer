@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="en">
 <head>
     <title>Final Answer | Register</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="GameShow.css">
 </head>
 <body>
     <div class="auth-container">

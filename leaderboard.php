@@ -2,7 +2,7 @@
 require_once 'config.php';
 checkAuth();
 
-$leaderboard_file = __DIR__ . 'data/leaderboard.txt';
+$leaderboard_file = __DIR__ . '/data/leaderboard.txt';
 $scores = [];
 
 if (file_exists($leaderboard_file)) {
@@ -26,7 +26,7 @@ if (file_exists($leaderboard_file)) {
 <html lang="en">
 <head>
     <title>Millionaire | Leaderboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="GameShow.css">
 </head>
 <body>
     <div class="container">
